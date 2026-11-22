@@ -92,6 +92,15 @@ window.SITE = {
       featured: true
     },
     {
+      name: "Anchorly API",
+      desc: {
+        tr: "Anchorly'nin arkasındaki REST API: kullanıcı hesaplarını, görevleri, rutinleri ve projeleri PostgreSQL'de saklar, böylece veriler cihazlar arasında taşınır. Argon2id ile şifreleme, kısa ömürlü JWT ve yenilenen refresh token, Zod ile doğrulama ve OpenAPI belgeleri içerir. Vitest ile test edildi.",
+        en: "The REST API behind Anchorly: it stores user accounts, tasks, routines and projects in PostgreSQL so data follows the user across devices. It includes Argon2id password hashing, short-lived JWTs with rotating refresh tokens, Zod validation and OpenAPI docs. Tested with Vitest."
+      },
+      tech: "Node.js · Express · PostgreSQL · Drizzle · Vitest",
+      github: "https://github.com/berkaycinar-dev/anchorly-api"
+    },
+    {
       name: { tr: "STDERP Tanıtım Sitesi", en: "STDERP Promotional Site" },
       desc: {
         tr: "Savunma sanayii süreç takip yazılımını tanıtan, Türkçe ve İngilizce dokümantasyonlu statik site.",
