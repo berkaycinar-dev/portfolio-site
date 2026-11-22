@@ -18,7 +18,7 @@ Tasarım dili: dergi kapağı estetiği. Kalın çerçeveler, sert gölgeler, b�
 
 ## Çalıştırma
 
-Kurulum yok. Bağlantılar `.html` uzantısız (`/hakkimda`, `/blog`) olduğu için dosyayı çift tıklayarak değil, yerel sunucuyla açın:
+Kurulum yok. Bağlantılar `.html` uzantısız (`/about`, `/blog`) olduğu için dosyayı çift tıklayarak değil, yerel sunucuyla açın:
 
 ```bash
 npx serve
@@ -28,9 +28,9 @@ npx serve
 
 ```
 .
-├─ index.html, hakkimda.html, projeler.html,
-│  deneyim.html, beceriler.html, blog.html,
-│  yazi.html, iletisim.html     → sayfalar
+├─ index.html, about.html, projects.html,
+│  experience.html, skills.html, blog.html,
+│  post.html, contact.html     → sayfalar
 ├─ content/
 │  ├─ data.js                   → projeler, deneyim, beceriler, sertifikalar, hakkımda
 │  └─ posts.js                  → blog yazıları
@@ -39,7 +39,7 @@ npx serve
 │  ├─ js/                       → site.js, blog.js, i18n.js, theme.js
 │  └─ Berkay_Cinar_CV.pdf
 ├─ sitemap.xml, robots.txt      → arama motoru dosyaları
-└─ docs/REHBER.md               → içerik ekleme rehberi
+└─ docs/GUIDE.md               → içerik ekleme rehberi
 ```
 
 ## İçerik ekleme
@@ -50,7 +50,7 @@ npx serve
 | Proje, deneyim, sertifika, beceri, hakkımda metni | `content/data.js` |
 
 Dosyaya bir kayıt ekleyip kaydetmek yeterlidir; sayfalar kendiliğinden güncellenir.
-Şablonlar ve adım adım anlatım için [`docs/REHBER.md`](docs/REHBER.md) dosyasına bakın.
+Şablonlar ve adım adım anlatım için [`docs/GUIDE.md`](docs/GUIDE.md) dosyasına bakın.
 
 ## Yayınlama
 

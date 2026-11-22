@@ -1,4 +1,66 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/hakkimda",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/hakkimda.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/projeler",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/projeler.html",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/deneyim",
+      "destination": "/experience",
+      "permanent": true
+    },
+    {
+      "source": "/deneyim.html",
+      "destination": "/experience",
+      "permanent": true
+    },
+    {
+      "source": "/beceriler",
+      "destination": "/skills",
+      "permanent": true
+    },
+    {
+      "source": "/beceriler.html",
+      "destination": "/skills",
+      "permanent": true
+    },
+    {
+      "source": "/iletisim",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/iletisim.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/yazi",
+      "destination": "/post",
+      "permanent": true
+    },
+    {
+      "source": "/yazi.html",
+      "destination": "/post",
+      "permanent": true
+    }
+  ]
 }

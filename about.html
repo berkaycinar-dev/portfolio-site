@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f0f10" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://berkaycinar.vercel.app/about">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Berkay Çınar">
-<meta property="og:title" content="Yazı — Berkay Çınar">
+<meta property="og:title" content="Hakkımda — Berkay Çınar">
 <meta property="og:description" content="Berkay Çınar — Yazılım Mühendisliği öğrencisi. Projeler, deneyim ve haftalık blog.">
-<meta property="og:url" content="https://berkaycinar.vercel.app/yazi">
-<title>Yazı — Berkay Çınar</title>
-<meta name="description" content="Berkay Çınar — Yazılım Mühendisliği öğrencisi. Yazı.">
+<meta property="og:url" content="https://berkaycinar.vercel.app/about">
+<title>Hakkımda — Berkay Çınar</title>
+<meta name="description" content="Berkay Çınar — Yazılım Mühendisliği öğrencisi. Hakkımda.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
@@ -22,10 +23,20 @@
 
 <header class="top"><div class="wrap row">
   <a class="logo" href="/"><i></i>Berkay Çınar</a>
-  <nav aria-label='Ana menü'><a href="/">Ana Sayfa</a><a href="/hakkimda">Hakkımda</a><a href="/projeler">Projeler</a><a href="/deneyim">Deneyim</a><a href="/beceriler">Beceriler</a><a href="/blog" aria-current="page">Blog</a><a href="/iletisim">İletişim</a></nav>
+  <nav aria-label='Ana menü'><a href="/">Ana Sayfa</a><a href="/about" aria-current="page">Hakkımda</a><a href="/projects">Projeler</a><a href="/experience">Deneyim</a><a href="/skills">Beceriler</a><a href="/blog">Blog</a><a href="/contact">İletişim</a></nav>
 </div></header>
 <main class="wrap">
-<article id="post" class="article" data-dyn></article>
+  <header class="phead"><span class="kicker">01 — Hakkımda</span><h1 class="page">Kısaca ben.</h1></header>
+  <p class="pull">"Sorumluluk sahibi, düzenli ve öğrenmeye açık."</p>
+  <div class="prose cols2" id="about-text" data-dyn></div>
+  <section class="block">
+    <div class="shead"><span class="kicker">Eğitim</span><h2>Okul</h2></div>
+    <div id="education-list" data-dyn></div>
+  </section>
+  <section class="block">
+    <div class="shead"><span class="kicker">Diller</span><h2>Konuştuklarım</h2></div>
+    <div class="cols" id="languages-list" data-dyn></div>
+  </section>
 </main>
 <footer class="foot"><div class="wrap"><b>Berkay Çınar</b><span>Yazılım Mühendisliği Öğrencisi · Ankara</span><span>© 2026</span></div></footer>
 <script src="content/posts.js"></script>

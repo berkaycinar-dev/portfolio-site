@@ -1,25 +1,26 @@
 /*
-  BLOG YAZILARI
-  -------------
-  Yeni haftalık yazı eklemek için aşağıdaki listenin EN ÜSTÜNE yeni bir nesne ekleyin.
-  Başka hiçbir dosyayı değiştirmeniz gerekmez; liste, ana sayfadaki "Bu haftanın yazısı" ve yazı sayfası otomatik güncellenir.
+  BLOG POSTS
+  ----------
+  To add a new weekly post, put a new object at the TOP of the list below.
+  No other file needs to change: the blog list, the "Latest post" block on the home page
+  and the post page update by themselves.
 
-  Alanlar (Türkçe):
-    slug    : adres kısmı (küçük harf, boşluksuz, ör. "hafta-2-react-notlari")
-    issue   : hafta / sayı numarası (isteğe bağlı; yazmazsanız etiket çıkmaz)
-    date    : "YYYY-AA-GG" biçiminde yayın tarihi
-    tag     : kategori etiketi (ör. "React", "Staj", "Not")
-    title   : başlık
-    summary : liste ekranında görünen kısa özet
-    body    : yazının gövdesi, HTML olarak (<p>, <h2>, <ul>, <blockquote>, <pre><code> kullanabilirsiniz)
+  Fields (Turkish):
+    slug    : the URL part (lowercase, no spaces, unique, e.g. "week-2-react-notes")
+    issue   : week / issue number (optional; the label is hidden if you leave it out)
+    date    : publish date as "YYYY-MM-DD"
+    tag     : category label (e.g. "React", "Internship", "Note")
+    title   : title
+    summary : short text shown in the list
+    body    : the post body as HTML (you can use <p>, <h2>, <ul>, <blockquote>, <pre><code>)
 
-  İngilizce çeviri (isteğe bağlı):
+  English translation (optional):
     en: { tag, title, summary, body }
-    "en" alanı yoksa, İngilizce modda yazı Türkçe olarak gösterilir.
+    If "en" is missing, the post is shown in Turkish when the site is in English.
 */
 window.POSTS = [
   {
-    slug: "yakinda-haftalik-blog",
+    slug: "coming-soon-weekly-blog",
     date: "2026-11-22",
     tag: "Duyuru",
     title: "Yakında burada: haftalık blog",

@@ -18,9 +18,9 @@
   var lang = function () { return (window.I18N && window.I18N.lang) === "en" ? "en" : "tr"; };
   var T = function () { return UI[lang()]; };
   var fmt = function (d, opts) { return new Date(d + "T12:00:00").toLocaleDateString(T().locale, opts || { day: "numeric", month: "long", year: "numeric" }); };
-  /* seçili dildeki alanları döndürür; çeviri yoksa Türkçeye düşer */
+  /* returns the fields in the selected language; falls back to Turkish if there is no translation */
   var L = function (p) { return lang() === "en" && p.en ? { tag: p.en.tag || p.tag, title: p.en.title || p.title, summary: p.en.summary || p.summary, body: p.en.body || p.body } : p; };
-  var link = function (p) { return "/yazi?s=" + encodeURIComponent(p.slug); };
+  var link = function (p) { return "/post?s=" + encodeURIComponent(p.slug); };
 
   var card = function (p) {
     var x = L(p);

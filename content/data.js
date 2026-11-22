@@ -1,23 +1,23 @@
 /*
-  SİTE İÇERİĞİ — değiştirdiğiniz tek yer burası
-  ------------------------------------------------
-  Projeler, deneyim, beceriler, sertifikalar, hakkımda metni ve ana sayfa bilgileri buradan gelir.
-  Burayı kaydedince tüm sayfalar kendiliğinden güncellenir. (Blog yazıları ayrı: posts.js)
+  SITE CONTENT - the only file you edit for most changes
+  -------------------------------------------------------
+  Projects, experience, skills, certificates, the about text and the home page facts come from here.
+  Save this file and every page updates by itself. (Blog posts live in posts.js.)
 
-  Metin alanları iki şekilde yazılabilir:
-    "Düz metin"                       → Türkçe ve İngilizce'de aynı görünür (isimler, teknoloji adları için)
-    { tr: "Türkçe", en: "English" }   → dile göre değişir
-  İngilizce karşılığı yazmazsanız Türkçe gösterilir.
+  Text fields can be written in two ways:
+    "Plain text"                      -> same in Turkish and English (names, technology names)
+    { tr: "Türkçe", en: "English" }   -> changes with the language
+  If you leave out the English text, the Turkish one is shown.
 
-  Ekleme kuralı:
-    • projects, jobs → EN YENİ olan listenin EN ÜSTÜNE
-    • certs, skills  → istediğiniz yere
+  Where to add:
+    - projects, jobs -> at the TOP of the list (newest first)
+    - certs, skills  -> anywhere
 */
 window.SITE = {
 
-  /* ===================== ANA SAYFA / HAKKIMDA ===================== */
+  /* ===================== HOME PAGE / ABOUT ===================== */
   profile: {
-    // Ana sayfadaki sağ üst bilgi kutusu
+    // Info box at the top right of the home page
     facts: [
       { label: { tr: "Okul", en: "School" },
         value: { tr: "OSTİM Teknik Üniversitesi · GNO 3.84", en: "OSTİM Technical University · GPA 3.84" } },
@@ -28,7 +28,7 @@ window.SITE = {
         value: { tr: "Türkçe · İngilizce B1+", en: "Turkish · English B1+" } }
     ],
 
-    // Hakkımda sayfasındaki paragraflar
+    // Paragraphs on the About page
     about: {
       tr: [
         "OSTİM Teknik Üniversitesi'nde Yazılım Mühendisliği okuyan, front-end odaklı ve full-stack yönünde ilerleyen bir geliştirici adayıyım.",
@@ -55,17 +55,17 @@ window.SITE = {
     ]
   },
 
-  /* ============================ PROJELER ============================
-     Yeni proje eklemek için bu şablonu kopyalayıp listenin EN ÜSTÜNE yapıştırın:
+  /* ============================ PROJECTS ============================
+     To add a project, copy this template and paste it at the TOP of the list:
 
      {
-       name: "Proje Adı",
+       name: "Project Name",
        desc: { tr: "Ne yapıyor, kısaca.", en: "What it does, briefly." },
        tech: "React · Vite · CSS",
-       github: "https://github.com/berkaycinar-dev/proje-repo",
-       demo: "https://proje.vercel.app",     // canlı adresi yoksa satırı silin
-       live: true,                            // "Canlı" rozeti; demo yazdıysanız otomatik çıkar
-       featured: true                         // ana sayfada öne çıkar (birden fazlaysa ilki)
+       github: "https://github.com/berkaycinar-dev/project-repo",
+       demo: "https://project.vercel.app",   // delete this line if there is no live URL
+       live: true,                           // "Live" badge; shown automatically when demo is set
+       featured: true                        // highlight on the home page (the first one wins)
      },
   ===================================================================== */
   projects: [
@@ -110,19 +110,19 @@ window.SITE = {
     }
   ],
 
-  /* ============================ DENEYİM ============================
-     Yeni deneyim eklemek için şablon (listenin EN ÜSTÜNE):
+  /* ============================ EXPERIENCE ============================
+     Template for a new job or internship (paste at the TOP of the list):
 
      {
        date:    { tr: "Ocak 2027 – Mart 2027", en: "January 2027 – March 2027" },
        role:    { tr: "Stajyer", en: "Intern" },
-       company: "Şirket Adı",
+       company: "Company Name",
        bullets: {
          tr: ["Yaptığım iş 1.", "Yaptığım iş 2."],
          en: ["What I did 1.", "What I did 2."]
        }
      },
-     (Madde yazmak istemezseniz bullets satırını silin.)
+     (Delete the bullets line if you do not want bullet points.)
   ===================================================================== */
   jobs: [
     {
@@ -160,8 +160,8 @@ window.SITE = {
     }
   ],
 
-  /* ============================ BECERİLER ============================
-     Yeni kategori ya da madde: { label: "Başlık", items: "Madde, Madde, Madde" } */
+  /* ============================ SKILLS ============================
+     New category or item: { label: "Title", items: "Item, Item, Item" } */
   skills: [
     { label: "Web", items: "HTML5, CSS3, JavaScript, React, Bootstrap, Vite" },
     { label: { tr: "Masaüstü (temel)", en: "Desktop (basic)" }, items: "C#, .NET, WPF, WinForms" },
@@ -174,9 +174,9 @@ window.SITE = {
       } }
   ],
 
-  /* ========================== SERTİFİKALAR ==========================
-     Yeni sertifika: { name: "Sertifika adı", issuer: "Veren kurum" },
-     Türkçe ad için: name: { tr: "…", en: "…" }  */
+  /* ========================== CERTIFICATES ==========================
+     New certificate: { name: "Certificate name", issuer: "Issuing organization" },
+     For a translated name: name: { tr: "…", en: "…" }  */
   certs: [
     { name: "Foundations of User Experience (UX) Design", issuer: "Google" },
     { name: "Generative AI: Introduction and Applications", issuer: "IBM" },

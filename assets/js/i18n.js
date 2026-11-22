@@ -1,19 +1,19 @@
 /*
-  DİL KATMANI (TR / EN) — yalnızca sayfaların SABİT metinleri
-  ------------------------------------------------------------
-  Menü, başlıklar, düğmeler gibi HTML'e yazılı metinlerin İngilizce karşılıkları burada.
-  Projeler, deneyim, beceriler, sertifikalar ve hakkımda metni data.js içinde kendi çevirisiyle gelir.
-  Blog yazılarının çevirisi posts.js içindeki "en" alanındadır.
-  Bir sabit metni HTML'de değiştirirseniz, aşağıdaki Türkçe anahtarı da aynı şekilde güncelleyin.
+  LANGUAGE LAYER (TR / EN) - static page texts only
+  ----------------------------------------------------
+  English versions of the texts written directly in the HTML (menu, headings, buttons).
+  Projects, experience, skills, certificates and the about text come from data.js with their own translations.
+  Blog post translations live in the "en" field of posts.js.
+  If you change a static text in the HTML, update the same Turkish key below as well.
 */
 (function () {
   var D = {
-    /* menü ve altbilgi */
+    /* menu and footer */
     "Ana Sayfa": "Home", "Hakkımda": "About", "Projeler": "Projects", "Deneyim": "Experience",
     "Beceriler": "Skills", "İletişim": "Contact",
     "Yazılım Mühendisliği Öğrencisi · Ankara": "Software Engineering Student · Ankara",
 
-    /* ana sayfa */
+    /* home page */
     "Yazılım Mühendisliği Öğrencisi": "Software Engineering Student",
     "Arayüzleri düzenli, anlaşılır ve canlıda çalışır hâle getiren; front-end odaklı, full-stack yönünde ilerleyen bir geliştirici adayı.":
       "An aspiring developer, front-end focused and moving toward full-stack, who turns interfaces into tidy, clear products that run live.",
@@ -26,29 +26,29 @@
     "Teknolojiler ve sertifikalar": "Technologies and certificates",
     "E-posta, GitHub ve CV": "Email, GitHub and CV",
 
-    /* projeler */
+    /* projects */
     "02 — Projeler": "02 — Projects",
     "Web'den masaüstüne projelerim.": "My projects, from web to desktop.",
     "Denediğim, geliştirdiğim ve yayınladığım işler. Hepsi öğrenerek ve deneyerek büyüdü.":
       "Things I've tried, built and published. All of them grew by learning and experimenting.",
 
-    /* hakkımda */
+    /* about */
     "01 — Hakkımda": "01 — About", "Kısaca ben.": "In short, me.",
     "\"Sorumluluk sahibi, düzenli ve öğrenmeye açık.\"": "\"Responsible, organized and eager to learn.\"",
     "Eğitim": "Education", "Okul": "School", "Diller": "Languages", "Konuştuklarım": "What I speak",
 
-    /* deneyim */
+    /* experience */
     "03 — Deneyim": "03 — Experience", "Staj ve çalışma hayatı.": "Internships and work life.",
 
-    /* beceriler */
+    /* skills */
     "04 — Beceriler": "04 — Skills", "Araçlar ve sertifikalar.": "Tools and certificates.",
     "Sertifikalar": "Certificates", "Öğrendiklerim, belgeli.": "What I've learned, documented.",
 
-    /* blog sayfası */
+    /* blog page */
     "05 — Blog": "05 — Blog", "Haftalık notlar.": "Weekly notes.",
     "Her hafta öğrendiğim, denediğim ve üzerine düşündüğüm bir şey.": "Something I learned, tried or thought about each week.",
 
-    /* iletişim */
+    /* contact */
     "06 — İletişim": "06 — Contact", "Birlikte çalışalım.": "Let's work together.",
     "Konum": "Location", "Özgeçmiş": "Résumé", "CV'yi indir (PDF)": "Download CV (PDF)"
   };
@@ -72,7 +72,7 @@
   var I18N = window.I18N = { lang: detect() };
   var origTitle = document.title;
 
-  /* JavaScript ile çizilen alanlar (data-dyn) kendi dilini yönetir; buradan çevrilmez */
+  /* Areas rendered by JavaScript (data-dyn) manage their own language; they are not translated here */
   function inDynamic(node) {
     for (var el = node.parentNode; el && el !== document.body; el = el.parentNode) {
       if (el.hasAttribute && el.hasAttribute("data-dyn")) return true;

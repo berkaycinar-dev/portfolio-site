@@ -18,7 +18,7 @@ Her iki dosyanın en üstündeki yorumda şablonlar da yazıyor.
 
 ```js
   {
-    slug: "hafta-2-react-notlari",       // adres kısmı: küçük harf, boşluksuz, benzersiz
+    slug: "week-2-react-notes",       // adres kısmı: küçük harf, boşluksuz, benzersiz
     issue: 2,                             // hafta numarası
     date: "2026-11-29",                   // YYYY-AA-GG
     tag: "React",                         // etiket
@@ -39,7 +39,7 @@ Her iki dosyanın en üstündeki yorumda şablonlar da yazıyor.
 ```
 
 Kendiliğinden güncellenenler: blog listesi, ana sayfadaki "Son yazı", yazı sayfası, önceki/sonraki bağlantıları.
-Başlangıçtaki "Yakında burada" duyurusunu (`yakinda-haftalik-blog`) ilk gerçek yazınızdan sonra silebilir ya da bırakabilirsiniz.
+Başlangıçtaki "Yakında burada" duyurusunu (`coming-soon-weekly-blog`) ilk gerçek yazınızdan sonra silebilir ya da bırakabilirsiniz.
 `issue` (hafta numarası) isteğe bağlıdır; yazmazsanız "Hafta N" etiketi çıkmaz.
 
 ---
@@ -53,7 +53,7 @@ Listenin EN ÜSTÜNE ekleyin:
       name: "Proje Adı",
       desc: { tr: "Ne yapıyor, kısaca.", en: "What it does, briefly." },
       tech: "React · Vite · CSS",
-      github: "https://github.com/berkaycinar-dev/proje-repo",
+      github: "https://github.com/berkaycinar-dev/project-repo",
       demo: "https://proje.vercel.app",   // canlı adres yoksa bu satırı silin
       featured: true                      // ana sayfada öne çıksın istiyorsanız
     },

@@ -1,16 +1,16 @@
-/* data.js içindeki içeriği sayfalara basar. Dil değişince yeniden çizer. */
+/* Renders the content of data.js into the pages. Re-renders when the language changes. */
 (function () {
   var S = window.SITE || {};
   var P = S.profile || {};
   var lang = function () { return window.I18N && window.I18N.lang === "en" ? "en" : "tr"; };
 
-  /* "metin" ya da {tr, en} → seçili dildeki metin */
+  /* "text" or {tr, en} -> text in the selected language */
   var t = function (v) {
     if (v == null) return "";
     if (typeof v === "string") return v;
     return v[lang()] != null ? v[lang()] : (v.tr || "");
   };
-  /* liste: [..] ya da {tr:[..], en:[..]} */
+  /* list: [..] or {tr:[..], en:[..]} */
   var list = function (v) {
     if (Array.isArray(v)) return v;
     return (v && (v[lang()] || v.tr)) || [];

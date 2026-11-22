@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://berkaycinar.vercel.app/</loc></url>
-  <url><loc>https://berkaycinar.vercel.app/hakkimda</loc></url>
-  <url><loc>https://berkaycinar.vercel.app/projeler</loc></url>
-  <url><loc>https://berkaycinar.vercel.app/deneyim</loc></url>
-  <url><loc>https://berkaycinar.vercel.app/beceriler</loc></url>
+  <url><loc>https://berkaycinar.vercel.app/about</loc></url>
+  <url><loc>https://berkaycinar.vercel.app/projects</loc></url>
+  <url><loc>https://berkaycinar.vercel.app/experience</loc></url>
+  <url><loc>https://berkaycinar.vercel.app/skills</loc></url>
   <url><loc>https://berkaycinar.vercel.app/blog</loc></url>
-  <url><loc>https://berkaycinar.vercel.app/iletisim</loc></url>
+  <url><loc>https://berkaycinar.vercel.app/contact</loc></url>
 </urlset>

@@ -1,4 +1,4 @@
-/* Açık / karanlık tema düğmesi. Seçim tarayıcıda saklanır; ilk açılışta sistem temasına uyulur. */
+/* Light / dark theme toggle. The choice is stored in the browser; the first visit follows the system theme. */
 (function () {
   var root = document.documentElement;
   var row = document.querySelector(".top .row");
@@ -30,7 +30,7 @@
   label();
 })();
 
-/* Kaydırılabilir mobil menüde bulunulan sayfayı görünür yap */
+/* Scroll the mobile menu so the current page is visible */
 (function () {
   var cur = document.querySelector(".top nav a[aria-current]");
   if (cur && cur.parentNode) cur.parentNode.scrollLeft = Math.max(0, cur.offsetLeft - 16);
