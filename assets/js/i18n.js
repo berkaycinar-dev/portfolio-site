@@ -48,6 +48,11 @@
     "05 — Blog": "05 — Blog", "Haftalık notlar.": "Weekly notes.",
     "Her hafta öğrendiğim, denediğim ve üzerine düşündüğüm bir şey.": "Something I learned, tried or thought about each week.",
 
+    /* 404 page */
+    "Sayfa bulunamadı": "Page not found",
+    "Aradığınız sayfa yok ya da taşınmış olabilir.": "The page you are looking for does not exist or may have moved.",
+    "Ana sayfaya dön": "Back to home",
+
     /* contact */
     "06 — İletişim": "06 — Contact", "Birlikte çalışalım.": "Let's work together.",
     "Konum": "Location", "Özgeçmiş": "Résumé", "CV'yi indir (PDF)": "Download CV (PDF)"
@@ -55,7 +60,7 @@
 
   var TITLES = {
     "Ana Sayfa": "Home", "Hakkımda": "About", "Projeler": "Projects", "Deneyim": "Experience",
-    "Beceriler": "Skills", "Blog": "Blog", "İletişim": "Contact"
+    "Beceriler": "Skills", "Blog": "Blog", "İletişim": "Contact", "Sayfa bulunamadı": "Page not found"
   };
 
   var KEY = "lang";

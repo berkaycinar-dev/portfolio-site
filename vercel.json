@@ -62,5 +62,11 @@
       "destination": "/post",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/assets/icons/favicon-32.png"
+    }
   ]
 }
