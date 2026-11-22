@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f0f10" media="(prefers-color-scheme: dark)">
+<title>Blog — Berkay Çınar</title>
+<meta name="description" content="Berkay Çınar — Yazılım Mühendisliği öğrencisi. Blog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light")t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="top"><div class="wrap row">
+  <a class="logo" href="index.html"><i></i>Berkay Çınar</a>
+  <nav aria-label='Ana menü'><a href="index.html">Ana Sayfa</a><a href="hakkimda.html">Hakkımda</a><a href="projeler.html">Projeler</a><a href="deneyim.html">Deneyim</a><a href="beceriler.html">Beceriler</a><a href="blog.html" aria-current="page">Blog</a><a href="iletisim.html">İletişim</a></nav>
+</div></header>
+<main class="wrap">
+
+  <header class="phead"><span class="kicker">05 — Blog</span><h1 class="page">Haftalık notlar.</h1><p class="lead">Her hafta öğrendiğim, denediğim ve üzerine düşündüğüm bir şey.</p></header>
+  <div id="posts" data-dyn></div>
+</main>
+<footer class="foot"><div class="wrap"><b>Berkay Çınar</b><span>Yazılım Mühendisliği Öğrencisi · Ankara</span><span>© 2026</span></div></footer>
+<script src="content/posts.js"></script>
+<script src="content/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/blog.js"></script>
+<script>
+(function(){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.06});
+document.querySelectorAll('.block,.proj,.exp,.post,.col').forEach(function(el){el.classList.add('rv');io.observe(el)})})();
+</script>
+</body>
+</html>
