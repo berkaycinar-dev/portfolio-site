@@ -25,7 +25,7 @@
   var card = function (p) {
     var x = L(p);
     return '<article class="post">' +
-      '<div class="meta"><span>' + T().week + p.issue + '</span><span>' + fmt(p.date) + '</span><span>' + x.tag + '</span></div>' +
+      '<div class="meta">' + (p.issue ? '<span>' + T().week + p.issue + '</span>' : '') + '<span>' + fmt(p.date) + '</span><span>' + x.tag + '</span></div>' +
       '<h3><a href="' + link(p) + '">' + x.title + '</a></h3>' +
       '<p>' + x.summary + '</p>' +
       '<a class="more" href="' + link(p) + '">' + T().read + '</a></article>';
@@ -53,7 +53,7 @@
     var p = P[idx], x = L(p), newer = P[idx - 1], older = P[idx + 1];
     document.title = x.title + " — Berkay Çınar";
     one.innerHTML =
-      '<div class="meta"><span>' + T().week + p.issue + '</span><span>' + fmt(p.date) + '</span><span>' + x.tag + '</span></div>' +
+      '<div class="meta">' + (p.issue ? '<span>' + T().week + p.issue + '</span>' : '') + '<span>' + fmt(p.date) + '</span><span>' + x.tag + '</span></div>' +
       '<h1 class="page">' + x.title + '</h1>' +
       '<div class="prose">' + x.body + '</div>' +
       '<nav class="pn">' +

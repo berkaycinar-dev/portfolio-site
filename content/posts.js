@@ -6,7 +6,7 @@
 
   Alanlar (Türkçe):
     slug    : adres kısmı (küçük harf, boşluksuz, ör. "hafta-2-react-notlari")
-    issue   : hafta / sayı numarası
+    issue   : hafta / sayı numarası (isteğe bağlı; yazmazsanız etiket çıkmaz)
     date    : "YYYY-AA-GG" biçiminde yayın tarihi
     tag     : kategori etiketi (ör. "React", "Staj", "Not")
     title   : başlık
@@ -19,43 +19,42 @@
 */
 window.POSTS = [
   {
-    slug: "hafta-1-blog-basliyor",
-    issue: 1,
+    slug: "yakinda-haftalik-blog",
     date: "2026-11-22",
-    tag: "Not",
-    title: "Blog başlıyor: haftalık yazı planı",
-    summary: "Bu sayfa her hafta yayınlanacak yazılar için ayrıldı. Bu ilk yazı bir örnek metindir.",
+    tag: "Duyuru",
+    title: "Yakında burada: haftalık blog",
+    summary: "Her hafta öğrendiklerimi, denediklerimi ve projelerimden notları paylaşacağım. İlk yazılar çok yakında.",
     body: `
-      <p>Bu yazı yalnızca <strong>örnek bir metindir</strong>. Blog bölümünün nasıl göründüğünü göstermek için eklendi; kendi yazınızla değiştirebilir ya da silebilirsiniz.</p>
-      <h2>Yazılar nerede yaşıyor?</h2>
-      <p>Tüm yazılar <code>posts.js</code> dosyasındaki listede tutulur. Yeni bir hafta için listenin başına yeni bir kayıt eklemeniz yeterlidir.</p>
-      <h2>Neler yazılabilir?</h2>
+      <p>Merhaba! Burası çok yakında her hafta güncellenen bir blog olacak.</p>
+      <h2>Neler paylaşacağım?</h2>
       <ul>
-        <li>O hafta öğrendiğiniz bir konu (React, SQL, C# ...)</li>
-        <li>Üzerinde çalıştığınız projeden notlar</li>
-        <li>Staj ve okul deneyimleri</li>
-        <li>Okuduğunuz makale ya da izlediğiniz eğitim özetleri</li>
+        <li>Hafta içinde öğrendiğim bir konu (React, SQL, C# ...)</li>
+        <li>Üzerinde çalıştığım projelerden notlar ve karşılaştığım zorluklar</li>
+        <li>Staj ve üniversite deneyimlerim</li>
+        <li>Okuduğum makalelerden ve izlediğim eğitimlerden özetler</li>
       </ul>
+      <h2>Neden yazıyorum?</h2>
+      <p>Öğrendiğim bir şeyi yazıya dökmek, onu gerçekten anlamamı sağlıyor. Aynı yolda ilerleyenlere de faydası olursa çok sevinirim.</p>
       <blockquote>Küçük ama düzenli yazmak, büyük ama nadir yazmaktan iyidir.</blockquote>
-      <p>Hazır olduğunuzda bu örneği silip ilk gerçek yazınızı ekleyebilirsiniz.</p>
+      <p>Takipte kalın, ilk yazılar çok yakında burada. Görüşmek üzere!</p>
     `,
     en: {
-      tag: "Note",
-      title: "The blog begins: a weekly writing plan",
-      summary: "This page is reserved for posts published every week. This first post is a sample text.",
+      tag: "Announcement",
+      title: "Coming soon: a weekly blog",
+      summary: "Every week I will share what I learned, what I tried and notes from my projects. The first posts are coming very soon.",
       body: `
-        <p>This post is only a <strong>sample text</strong>. It was added to show how the blog section looks; you can replace it with your own post or delete it.</p>
-        <h2>Where do the posts live?</h2>
-        <p>All posts are kept in the list inside <code>posts.js</code>. For a new week, just add a new entry at the top of the list.</p>
-        <h2>What can be written?</h2>
+        <p>Hello! Very soon this place will be a blog updated every week.</p>
+        <h2>What will I share?</h2>
         <ul>
-          <li>A topic you learned that week (React, SQL, C# ...)</li>
-          <li>Notes from a project you are working on</li>
-          <li>Internship and school experiences</li>
-          <li>Summaries of articles you read or courses you watched</li>
+          <li>A topic I learned during the week (React, SQL, C# ...)</li>
+          <li>Notes from the projects I work on and the challenges I run into</li>
+          <li>My internship and university experiences</li>
+          <li>Summaries of articles I read and courses I watched</li>
         </ul>
+        <h2>Why am I writing?</h2>
+        <p>Writing down something I learned helps me truly understand it. If it helps others on the same path, I will be very happy.</p>
         <blockquote>Writing a little but regularly beats writing a lot but rarely.</blockquote>
-        <p>When you are ready, you can delete this sample and add your first real post.</p>
+        <p>Stay tuned, the first posts will be here very soon. See you!</p>
       `
     }
   }

@@ -39,7 +39,8 @@ Her iki dosyanın en üstündeki yorumda şablonlar da yazıyor.
 ```
 
 Kendiliğinden güncellenenler: blog listesi, ana sayfadaki "Son yazı", yazı sayfası, önceki/sonraki bağlantıları.
-Örnek yazıyı (`hafta-1-blog-basliyor`) gerçek yazınız hazır olunca silin.
+Başlangıçtaki "Yakında burada" duyurusunu (`yakinda-haftalik-blog`) ilk gerçek yazınızdan sonra silebilir ya da bırakabilirsiniz.
+`issue` (hafta numarası) isteğe bağlıdır; yazmazsanız "Hafta N" etiketi çıkmaz.
 
 ---
 
