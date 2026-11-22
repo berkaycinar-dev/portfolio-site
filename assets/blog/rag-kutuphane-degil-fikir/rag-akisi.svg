@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300">
+  <title>RAG</title>
+  <desc>Question, search, found piece, model, answer</desc>
+  <rect x="1.5" y="1.5" width="697" height="297" fill="#f3f2ee" stroke="#0b0b0b" stroke-width="3"/>
+  <!-- soru -->
+  <rect x="30" y="110" width="80" height="80" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <circle cx="70" cy="137" r="15" fill="#0b0b0b"/>
+  <rect x="48" y="157" width="44" height="20" fill="#0b0b0b"/>
+  <!-- soru -> arama -->
+  <line x1="110" y1="150" x2="168" y2="150" stroke="#0b0b0b" stroke-width="5"/>
+  <polygon points="166,138 184,150 166,162" fill="#0b0b0b"/>
+  <!-- arama (buyutec) -->
+  <line x1="236" y1="160" x2="258" y2="182" stroke="#0b0b0b" stroke-width="10"/>
+  <circle cx="218" cy="142" r="26" fill="#ffffff" stroke="#0b0b0b" stroke-width="7"/>
+  <!-- arama -> parcalar -->
+  <line x1="256" y1="150" x2="292" y2="150" stroke="#0b0b0b" stroke-width="5"/>
+  <polygon points="290,138 308,150 290,162" fill="#0b0b0b"/>
+  <!-- parcalar -->
+  <rect x="310" y="80" width="70" height="40" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="310" y="130" width="70" height="40" fill="#d90000" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="310" y="180" width="70" height="40" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <!-- parca -> model -->
+  <line x1="380" y1="150" x2="422" y2="150" stroke="#0b0b0b" stroke-width="5"/>
+  <polygon points="420,138 438,150 420,162" fill="#0b0b0b"/>
+  <!-- soru -> model (ust yol) -->
+  <polyline points="70,110 70,48 490,48 490,84" fill="none" stroke="#0b0b0b" stroke-width="5"/>
+  <polygon points="478,82 490,98 502,82" fill="#0b0b0b"/>
+  <!-- model -->
+  <rect x="440" y="100" width="100" height="100" fill="#0b0b0b"/>
+  <line x1="466" y1="124" x2="514" y2="124" stroke="#f3f2ee" stroke-width="6"/>
+  <line x1="466" y1="124" x2="490" y2="168" stroke="#f3f2ee" stroke-width="6"/>
+  <line x1="514" y1="124" x2="490" y2="168" stroke="#f3f2ee" stroke-width="6"/>
+  <rect x="452" y="112" width="24" height="24" fill="#f3f2ee"/>
+  <rect x="504" y="112" width="24" height="24" fill="#f3f2ee"/>
+  <rect x="478" y="158" width="24" height="24" fill="#f3f2ee"/>
+  <!-- model -> cevap -->
+  <line x1="540" y1="150" x2="586" y2="150" stroke="#0b0b0b" stroke-width="5"/>
+  <polygon points="584,138 600,150 584,162" fill="#0b0b0b"/>
+  <!-- cevap -->
+  <rect x="600" y="110" width="80" height="80" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="616" y="118" width="48" height="24" fill="#0b0b0b"/>
+  <rect x="616" y="158" width="48" height="24" fill="#0b0b0b"/>
+</svg>

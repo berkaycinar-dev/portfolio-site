@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300">
+  <title>RAG</title>
+  <desc>Top: question, empty box, model, answer. Bottom: question, search, found piece, model, answer</desc>
+  <rect x="1.5" y="1.5" width="697" height="297" fill="#f3f2ee" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="14" y="16" width="672" height="124" fill="#ecebe6" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="40" y="46" width="64" height="64" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <circle cx="72" cy="66" r="12" fill="#0b0b0b"/>
+  <rect x="54" y="82" width="36" height="24" fill="#0b0b0b"/>
+  <line x1="104" y1="78" x2="288" y2="78" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="286,66 302,78 286,90" fill="#0b0b0b"/>
+  <rect x="309" y="53" width="74" height="50" fill="#f3f2ee" stroke="#0b0b0b" stroke-width="6" stroke-dasharray="16 10"/>
+  <line x1="386" y1="78" x2="424" y2="78" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="422,66 438,78 422,90" fill="#0b0b0b"/>
+  <rect x="440" y="48" width="84" height="60" fill="#0b0b0b"/>
+  <line x1="462" y1="60" x2="502" y2="60" stroke="#f3f2ee" stroke-width="6"/>
+  <line x1="462" y1="60" x2="482" y2="86" stroke="#f3f2ee" stroke-width="6"/>
+  <line x1="502" y1="60" x2="482" y2="86" stroke="#f3f2ee" stroke-width="6"/>
+  <rect x="450" y="54" width="24" height="24" fill="#f3f2ee"/>
+  <rect x="490" y="54" width="24" height="24" fill="#f3f2ee"/>
+  <rect x="470" y="78" width="24" height="24" fill="#f3f2ee"/>
+  <line x1="524" y1="78" x2="574" y2="78" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="572,66 588,78 572,90" fill="#0b0b0b"/>
+  <rect x="590" y="38" width="72" height="80" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="602" y="48" width="48" height="24" fill="#0b0b0b"/>
+  <rect x="602" y="84" width="48" height="24" fill="#0b0b0b"/>
+  <rect x="14" y="160" width="672" height="124" fill="#ecebe6" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="40" y="190" width="64" height="64" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <circle cx="72" cy="210" r="12" fill="#0b0b0b"/>
+  <rect x="54" y="226" width="36" height="24" fill="#0b0b0b"/>
+  <line x1="104" y1="222" x2="148" y2="222" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="146,210 162,222 146,234" fill="#0b0b0b"/>
+  <line x1="198" y1="232" x2="218" y2="252" stroke="#0b0b0b" stroke-width="10"/>
+  <circle cx="186" cy="218" r="20" fill="#d90000" stroke="#0b0b0b" stroke-width="6"/>
+  <line x1="236" y1="222" x2="288" y2="222" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="286,210 302,222 286,234" fill="#0b0b0b"/>
+  <rect x="306" y="194" width="80" height="56" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="322" y="210" width="48" height="24" fill="#0b0b0b"/>
+  <line x1="386" y1="222" x2="424" y2="222" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="422,210 438,222 422,234" fill="#0b0b0b"/>
+  <rect x="440" y="192" width="84" height="60" fill="#0b0b0b"/>
+  <line x1="462" y1="204" x2="502" y2="204" stroke="#f3f2ee" stroke-width="6"/>
+  <line x1="462" y1="204" x2="482" y2="230" stroke="#f3f2ee" stroke-width="6"/>
+  <line x1="502" y1="204" x2="482" y2="230" stroke="#f3f2ee" stroke-width="6"/>
+  <rect x="450" y="198" width="24" height="24" fill="#f3f2ee"/>
+  <rect x="490" y="198" width="24" height="24" fill="#f3f2ee"/>
+  <rect x="470" y="222" width="24" height="24" fill="#f3f2ee"/>
+  <line x1="524" y1="222" x2="574" y2="222" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="572,210 588,222 572,234" fill="#0b0b0b"/>
+  <rect x="590" y="182" width="72" height="80" fill="#ffffff" stroke="#0b0b0b" stroke-width="3"/>
+  <rect x="602" y="192" width="48" height="24" fill="#0b0b0b"/>
+  <rect x="602" y="228" width="48" height="24" fill="#0b0b0b"/>
+  <polyline points="72,190 72,174 482,174 482,178" fill="none" stroke="#0b0b0b" stroke-width="6"/>
+  <polygon points="470,176 482,192 494,176" fill="#0b0b0b"/>
+</svg>
