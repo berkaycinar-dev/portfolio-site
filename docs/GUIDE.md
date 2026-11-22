@@ -111,6 +111,13 @@ Mevcut kategoriye eklemek için ilgili `items` metninin sonuna `, Yeni Beceri` y
 `assets/css/style.css` (tasarım) ve `assets/js/` klasörü (`site.js`, `blog.js`, `i18n.js`, `theme.js` — çalışma mantığı).
 Menü, sayfa başlıkları ve düğmeler gibi **sabit metinleri** değiştirirseniz, `assets/js/i18n.js` içindeki aynı Türkçe cümleyi de güncelleyin (aksi halde İngilizce modda çevrilmez).
 
+## Sayfalama (uzun listeler)
+
+- **Projeler:** Projeler sayfasında ilk 8 proje görünür, kalanlar "Daha fazla göster" düğmesiyle açılır.
+- **Blog:** Her sayfada 10 yazı görünür, fazlası için sayfa numaraları (`/blog?page=2`) çıkar.
+- Bu sayıları `content/data.js` dosyasındaki `settings` bölümünden değiştirebilirsiniz (`projectsVisible`, `postsPerPage`).
+- Az projeniz ya da yazınız varken düğme ve sayfa numaraları görünmez; kendiliğinden devreye girer.
+
 ## Sık sorunlar
 
 - **Sayfada hiçbir şey çıkmıyor:** Son kaydettiğiniz dosyada virgül ya da tırnak eksik olabilir. Her kayıt `},` ile bitmeli, metinler tırnak içinde olmalı. Tarayıcıda F12 → Console'da hata satırı görünür.

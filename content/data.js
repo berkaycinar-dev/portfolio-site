@@ -15,6 +15,14 @@
 */
 window.SITE = {
 
+  /* ===================== LIST SIZES =====================
+     projectsVisible: projects shown on the Projects page before the "Show more" button
+     postsPerPage:    blog posts per page; page numbers appear when there are more */
+  settings: {
+    projectsVisible: 8,
+    postsPerPage: 10
+  },
+
   /* ===================== HOME PAGE / ABOUT ===================== */
   profile: {
     // Info box at the top right of the home page

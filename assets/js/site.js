@@ -16,9 +16,12 @@
     return (v && (v[lang()] || v.tr)) || [];
   };
   var UI = {
-    tr: { live: "Canlı", github: "GitHub ↗", demo: "Canlı demo ↗" },
-    en: { live: "Live", github: "GitHub ↗", demo: "Live demo ↗" }
+    tr: { live: "Canlı", github: "GitHub ↗", demo: "Canlı demo ↗", more: "Daha fazla göster" },
+    en: { live: "Live", github: "GitHub ↗", demo: "Live demo ↗", more: "Show more" }
   };
+  /* how many projects are visible before the "Show more" button (set in data.js) */
+  var visible = (S.settings && S.settings.projectsVisible) || 8;
+  var expanded = false;
   var ext = function (url, label) {
     return '<a class="lnk" href="' + url + '" target="_blank" rel="noopener">' + label + "</a>";
   };
@@ -46,7 +49,12 @@
 
   function render() {
     var projects = S.projects || [];
-    fill("projects-list", projects.map(projItem).join(""));
+    var shown = expanded ? projects : projects.slice(0, visible);
+    fill("projects-list", shown.map(projItem).join(""));
+    var rest = projects.length - shown.length;
+    fill("projects-more", rest > 0
+      ? '<button type="button" class="btn ghost" id="show-more">' + UI[lang()].more + " (" + rest + ")</button>"
+      : "");
 
     var fi = projects.findIndex(function (p) { return p.featured; });
     if (fi < 0) fi = 0;
@@ -77,6 +85,16 @@
       return '<div class="col"><h4>' + t(l.name) + "</h4><p>" + t(l.level) + "</p></div>";
     }).join(""));
   }
+
+  var moreBox = document.getElementById("projects-more");
+  if (moreBox) moreBox.addEventListener("click", function (e) {
+    if (!e.target.closest || !e.target.closest("#show-more")) return;
+    expanded = true;
+    render();
+    /* keep keyboard focus where the new projects start */
+    var first = document.querySelectorAll("#projects-list .proj")[visible];
+    if (first) { first.setAttribute("tabindex", "-1"); first.focus({ preventScroll: true }); }
+  });
 
   render();
   document.addEventListener("langchange", render);
