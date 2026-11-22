@@ -13,7 +13,6 @@ Tasarım dili: dergi kapağı estetiği. Kalın çerçeveler, sert gölgeler, b�
 - **Haftalık blog:** yazı listesi, tek yazı sayfası, önceki/sonraki gezintisi
 - **İki dil:** Türkçe / İngilizce anahtarı, seçim hatırlanır
 - **Açık / karanlık tema:** sistem temasına uyar, seçim hatırlanır
-- **Veriyle yönetilen içerik:** yeni proje, deneyim ya da sertifika eklemek için tek bir dosyaya kayıt eklemek yeterli
 - **Duyarlı tasarım:** telefon, tablet ve masaüstünde çalışır; hareket azaltma ayarına saygı gösterir
 
 ## Çalıştırma
@@ -39,18 +38,8 @@ npx serve
 │  ├─ js/                       → site.js, blog.js, i18n.js, theme.js
 │  └─ Berkay_Cinar_CV.pdf
 ├─ sitemap.xml, robots.txt      → arama motoru dosyaları
-└─ docs/GUIDE.md               → içerik ekleme rehberi
+└─ docs/GUIDE.md
 ```
-
-## İçerik ekleme
-
-| Eklemek istediğiniz | Dosya |
-|---|---|
-| Haftalık blog yazısı | `content/posts.js` |
-| Proje, deneyim, sertifika, beceri, hakkımda metni | `content/data.js` |
-
-Dosyaya bir kayıt ekleyip kaydetmek yeterlidir; sayfalar kendiliğinden güncellenir.
-Şablonlar ve adım adım anlatım için [`docs/GUIDE.md`](docs/GUIDE.md) dosyasına bakın.
 
 ## Yayınlama
 
