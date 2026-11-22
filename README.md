@@ -15,6 +15,22 @@ Tasarım dili: dergi kapağı estetiği. Kalın çerçeveler, sert gölgeler, b�
 - **Açık / karanlık tema:** sistem temasına uyar, seçim hatırlanır
 - **Duyarlı tasarım:** telefon, tablet ve masaüstünde çalışır; hareket azaltma ayarına saygı gösterir
 
+## Ekran görüntüleri
+
+**Açık ve karanlık tema**
+
+| Açık tema | Karanlık tema |
+|---|---|
+| ![Ana sayfa, açık tema](docs/screenshots/home-light.png) | ![Ana sayfa, karanlık tema](docs/screenshots/home-dark.png) |
+
+**Projeler sayfası**
+
+![Projeler sayfası](docs/screenshots/projects.png)
+
+**Telefon görünümü**
+
+![Telefonda ana sayfa, projeler ve deneyim sayfaları](docs/screenshots/mobile.png)
+
 ## Çalıştırma
 
 Kurulum yok. Bağlantılar `.html` uzantısız (`/about`, `/blog`) olduğu için dosyayı çift tıklayarak değil, yerel sunucuyla açın:
@@ -38,7 +54,9 @@ npx serve
 │  ├─ js/                       → site.js, blog.js, i18n.js, theme.js
 │  └─ Berkay_Cinar_CV.pdf
 ├─ sitemap.xml, robots.txt      → arama motoru dosyaları
-└─ docs/GUIDE.md
+└─ docs/
+   ├─ GUIDE.md
+   └─ screenshots/             → README ekran görüntüleri
 ```
 
 ## Yayınlama
