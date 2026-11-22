@@ -50,7 +50,7 @@
 
     var fi = projects.findIndex(function (p) { return p.featured; });
     if (fi < 0) fi = 0;
-    fill("featured", projects.length ? projItem(projects[fi], fi) : "");
+    fill("featured", projects.length ? projItem(projects[fi], 0) : "");
 
     fill("jobs-list", (S.jobs || []).map(jobItem).join(""));
 

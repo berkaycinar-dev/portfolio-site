@@ -70,6 +70,16 @@ window.SITE = {
   ===================================================================== */
   projects: [
     {
+      name: { tr: "Portfolyo Sitesi", en: "Portfolio Site" },
+      desc: {
+        tr: "Bu kişisel portfolyo sitesi: çok sayfalı yapı, haftalık blog, Türkçe/İngilizce dil desteği, açık/karanlık tema ve telefon-tablet uyumlu tasarım. Saf HTML, CSS ve JavaScript ile yazıldı, Vercel'de yayında.",
+        en: "This personal portfolio site: multi-page structure, weekly blog, Turkish/English language support, light/dark theme and a phone and tablet friendly design. Written in plain HTML, CSS and JavaScript, live on Vercel."
+      },
+      tech: "HTML5 · CSS3 · JavaScript",
+      github: "https://github.com/berkaycinar-dev/portfolio-site",
+      demo: "https://berkaycinar.vercel.app"
+    },
+    {
       name: "Anchorly",
       desc: {
         tr: "Görev ve alışkanlık takip uygulaması: tekrarlayan görevler, sürükle-bırak sıralama, aylık rutin tablosu, takvim, 6 tema ve Türkçe/İngilizce dil desteği. Vitest ile test edildi, Vercel'de yayında.",
