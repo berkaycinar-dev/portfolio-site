@@ -3,6 +3,8 @@
 Yazılım Mühendisliği öğrencisi olarak projelerimi, deneyimlerimi ve haftalık yazılarımı paylaştığım kişisel portfolyo sitesi.
 Saf HTML, CSS ve JavaScript ile yazıldı; derleme ya da kurulum gerektirmez.
 
+**Canlı site:** https://berkaycinar.vercel.app
+
 Tasarım dili: dergi kapağı estetiği. Kalın çerçeveler, sert gölgeler, büyük tipografi (Fraunces + Inter Tight).
 
 ## Özellikler
@@ -38,6 +40,7 @@ npx serve
 │  ├─ css/style.css             → tasarım (açık ve karanlık tema dahil)
 │  ├─ js/                       → site.js, blog.js, i18n.js, theme.js
 │  └─ Berkay_Cinar_CV.pdf
+├─ sitemap.xml, robots.txt      → arama motoru dosyaları
 └─ docs/REHBER.md               → içerik ekleme rehberi
 ```
 
@@ -53,7 +56,8 @@ Dosyaya bir kayıt ekleyip kaydetmek yeterlidir; sayfalar kendiliğinden güncel
 
 ## Yayınlama
 
-Statik bir site olduğu için Vercel, GitHub Pages ya da Netlify ile doğrudan yayınlanabilir.
+Site Vercel üzerinde yayında: https://berkaycinar.vercel.app
+Statik bir site olduğu için GitHub Pages ya da Netlify ile de doğrudan yayınlanabilir.
 Ek ayar gerekmez; yayın kökü deponun kendisidir.
 
 ## Teknolojiler
