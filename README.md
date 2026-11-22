@@ -18,9 +18,7 @@ Tasarım dili: dergi kapağı estetiği. Kalın çerçeveler, sert gölgeler, b�
 
 ## Çalıştırma
 
-Kurulum yok. `index.html` dosyasını tarayıcıda açmanız yeterli.
-
-İsterseniz yerel sunucuyla da açabilirsiniz:
+Kurulum yok. Bağlantılar `.html` uzantısız (`/hakkimda`, `/blog`) olduğu için dosyayı çift tıklayarak değil, yerel sunucuyla açın:
 
 ```bash
 npx serve

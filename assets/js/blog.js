@@ -20,7 +20,7 @@
   var fmt = function (d, opts) { return new Date(d + "T12:00:00").toLocaleDateString(T().locale, opts || { day: "numeric", month: "long", year: "numeric" }); };
   /* seçili dildeki alanları döndürür; çeviri yoksa Türkçeye düşer */
   var L = function (p) { return lang() === "en" && p.en ? { tag: p.en.tag || p.tag, title: p.en.title || p.title, summary: p.en.summary || p.summary, body: p.en.body || p.body } : p; };
-  var link = function (p) { return "yazi.html?s=" + encodeURIComponent(p.slug); };
+  var link = function (p) { return "/yazi?s=" + encodeURIComponent(p.slug); };
 
   var card = function (p) {
     var x = L(p);
@@ -47,7 +47,7 @@
     var slug = new URLSearchParams(location.search).get("s");
     var idx = P.findIndex(function (x) { return x.slug === slug; });
     if (idx < 0) {
-      one.innerHTML = '<h1 class="page">' + T().nfTitle + '</h1><p class="lead">' + T().nfText + '</p><p><a class="more" href="blog.html">' + T().back + '</a></p>';
+      one.innerHTML = '<h1 class="page">' + T().nfTitle + '</h1><p class="lead">' + T().nfText + '</p><p><a class="more" href="/blog">' + T().back + '</a></p>';
       return;
     }
     var p = P[idx], x = L(p), newer = P[idx - 1], older = P[idx + 1];
@@ -60,7 +60,7 @@
         (older ? '<a href="' + link(older) + '"><small>' + T().older + '</small>' + L(older).title + '</a>' : '<span></span>') +
         (newer ? '<a class="r" href="' + link(newer) + '"><small>' + T().newer + '</small>' + L(newer).title + '</a>' : '<span></span>') +
       '</nav>' +
-      '<p><a class="more" href="blog.html">' + T().all + '</a></p>';
+      '<p><a class="more" href="/blog">' + T().all + '</a></p>';
   }
 
   render();
