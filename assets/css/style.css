@@ -84,7 +84,7 @@ nav a[aria-current=page]{color:var(--accent)}
 .rv{opacity:0;transform:translateY(16px);transition:.7s ease}.rv.on{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.proj:hover,.tiles a:hover{padding-left:0;transform:none}}
 
-:root{--card:#fff;--tint-y:#ffd23f;--tint-b:#dfe5ff;--tint-r:#ffd9d2;--bg:#fbfaf6;--ink:#0d0d0d;--mute:#6a6a66;--line:#dcdad2;--accent:#ff3b1f;--blue:#1c3dff;--yellow:#ffd23f;--chip:#efede5;--hf:"Fraunces",Georgia,serif;--bf:"Inter Tight",system-ui,sans-serif;--uf:"Inter Tight",system-ui,sans-serif;--fs:15.5px;--maxw:1180px;--hw:900;--mt:36px}
+:root{--bg:#f3f2ee;--card:#ffffff;--ink:#0b0b0b;--mute:#6b6b66;--line:#d6d5cf;--accent:#d90000;--blue:#0b0b0b;--yellow:#dcdad0;--chip:#e9e8e2;--tint-y:#dcdad0;--tint-b:#ecebe6;--tint-r:#f6d4d0;--hf:"Fraunces",Georgia,serif;--bf:"Inter Tight",system-ui,sans-serif;--uf:"Inter Tight",system-ui,sans-serif;--fs:15.5px;--maxw:1180px;--hw:900;--mt:36px}
 .top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:3px solid var(--ink)}
 .row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
 .logo{font-family:var(--hf);font-weight:900;font-size:24px;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-.02em}
@@ -153,11 +153,11 @@ html{zoom:.8}
 .themesw:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 
 /* DARK THEME */
-[data-theme=dark]{color-scheme:dark;--bg:#0f0f10;--ink:#f4f1ea;--mute:#a4a198;--line:#2f2f2c;--blue:#7b8fff;--chip:#1f1f1c;--card:#19191a;--tint-y:#2e2710;--tint-b:#1a2050;--tint-r:#3a1d17}
+[data-theme=dark]{color-scheme:dark;--bg:#0b0b0b;--ink:#f3f2ee;--mute:#a3a29c;--line:#2c2c2a;--blue:#f3f2ee;--chip:#1a1a19;--card:#151514;--tint-y:#2a2a27;--tint-b:#1f1f1e;--tint-r:#3b1412}
 [data-theme=dark] .phead{background:var(--tint-y);box-shadow:8px 8px 0 var(--yellow)}
 [data-theme=dark] .phead .kicker{background:var(--yellow);color:#0d0d0d}
 [data-theme=dark] .display em,[data-theme=dark] .col h4,[data-theme=dark] .article .prose p:first-of-type::first-letter,[data-theme=dark] .badge{color:#0d0d0d}
-[data-theme=dark] .bigmail{background:linear-gradient(transparent 62%,rgba(255,210,63,.35) 62%)}
+[data-theme=dark] .bigmail{background:linear-gradient(transparent 62%,rgba(220,218,208,.35) 62%)}
 [data-theme=dark] .langsw button:hover{color:#0d0d0d}
 [data-theme=dark] .foot{background:var(--card);color:var(--ink);border-top:3px solid var(--ink)}
 [data-theme=dark] .logo i{background:var(--accent)}
