@@ -71,4 +71,4 @@ HTML5 · CSS3 · JavaScript (ES5, bağımlılıksız) · Google Fonts
 
 ## İletişim
 
-[github.com/berkaycinar-dev](https://github.com/berkaycinar-dev) · berkaycnr6767@gmail.com
+[GitHub](https://github.com/berkaycinar-dev) · [LinkedIn](https://www.linkedin.com/in/berkaycinar-dev) · [Instagram](https://www.instagram.com/brk.cnr/) · berkaycnr6767@gmail.com
