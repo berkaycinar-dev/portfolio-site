@@ -47,8 +47,53 @@
 
   function fill(id, html) { var el = document.getElementById(id); if (el) el.innerHTML = html; }
 
+  /* ---------- order projects by their GitHub commit count (most first) ----------
+     Counts come from the GitHub API and are cached for a few hours. Until they arrive,
+     or if the API cannot be reached, the order in data.js is used. */
+  var commits = {};
+  var CACHE_KEY = "projectCommits";
+  var CACHE_TTL = 6 * 60 * 60 * 1000;
+  var repoOf = function (p) {
+    var m = p.github && p.github.match(/github\.com\/([^\/]+\/[^\/#?]+)/);
+    return m ? m[1].replace(/\.git$/, "") : null;
+  };
+  function sortedProjects() {
+    return (S.projects || []).map(function (p, i) { return { p: p, i: i }; })
+      .sort(function (a, b) {
+        var ca = commits[repoOf(a.p)], cb = commits[repoOf(b.p)];
+        return (cb != null ? cb : -1) - (ca != null ? ca : -1) || a.i - b.i;
+      })
+      .map(function (x) { return x.p; });
+  }
+  function countCommits(repo) {
+    return fetch("https://api.github.com/repos/" + repo + "/commits?per_page=1")
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        var last = (r.headers.get("Link") || "").match(/[?&]page=(\d+)[^>]*>;\s*rel="last"/);
+        return last ? +last[1] : r.json().then(function (a) { return a.length; });
+      });
+  }
+  function loadCommits() {
+    if (!document.getElementById("projects-list") || !window.fetch) return;
+    try {
+      var c = JSON.parse(localStorage.getItem(CACHE_KEY) || "null");
+      if (c && Date.now() - c.at < CACHE_TTL) { commits = c.counts; return; }
+    } catch (e) { /* storage unavailable */ }
+    var repos = (S.projects || []).map(repoOf).filter(Boolean);
+    Promise.all(repos.map(function (r) {
+      return countCommits(r).then(function (n) { return [r, n]; }, function () { return null; });
+    })).then(function (pairs) {
+      var counts = {};
+      pairs.forEach(function (x) { if (x) counts[x[0]] = x[1]; });
+      if (!Object.keys(counts).length) return;
+      commits = counts;
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), counts: counts })); } catch (e) { /* ignore */ }
+      render();
+    });
+  }
+
   function render() {
-    var projects = S.projects || [];
+    var projects = sortedProjects();
     var shown = expanded ? projects : projects.slice(0, visible);
     fill("projects-list", shown.map(projItem).join(""));
     var rest = projects.length - shown.length;
@@ -96,6 +141,7 @@
     if (first) { first.setAttribute("tabindex", "-1"); first.focus({ preventScroll: true }); }
   });
 
+  loadCommits();
   render();
   document.addEventListener("langchange", render);
 })();

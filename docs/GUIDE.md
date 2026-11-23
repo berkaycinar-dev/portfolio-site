@@ -46,7 +46,7 @@ Başlangıçtaki "Yakında burada" duyurusunu (`coming-soon-weekly-blog`) ilk ge
 
 ## 2) Yeni proje → `content/data.js` içindeki `projects`
 
-Listenin EN ÜSTÜNE ekleyin:
+Listenin herhangi bir yerine ekleyin. Projeler, GitHub reposundaki commit sayısına göre (en çok olan üstte) otomatik sıralanır:
 
 ```js
     {
@@ -62,6 +62,7 @@ Listenin EN ÜSTÜNE ekleyin:
 - `demo` yazarsanız "Canlı" rozeti ve "Canlı demo ↗" bağlantısı otomatik çıkar.
 - `featured: true` olan ilk proje ana sayfada gösterilir. Başka projeyi öne çıkaracaksanız eskisinden `featured` satırını silin.
 - Numaralar (01, 02 ...) otomatik verilir.
+- Commit sayıları ziyaretçinin tarayıcısında GitHub API'den alınır ve 6 saat önbellekte tutulur. GitHub'a ulaşılamazsa `data.js` içindeki sıra kullanılır; bu yüzden listeyi kabaca commit sayısına göre dizili tutmak iyi olur. `github` bağlantısı olmayan projeler en sona düşer.
 
 ## 3) Yeni deneyim → `jobs`
 

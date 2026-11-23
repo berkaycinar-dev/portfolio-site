@@ -10,7 +10,8 @@
   If you leave out the English text, the Turkish one is shown.
 
   Where to add:
-    - projects, jobs -> at the TOP of the list (newest first)
+    - projects -> anywhere; the Projects page sorts them by GitHub commit count (most first)
+    - jobs     -> at the TOP of the list (newest first)
     - certs, skills  -> anywhere
 */
 window.SITE = {
@@ -64,7 +65,9 @@ window.SITE = {
   },
 
   /* ============================ PROJECTS ============================
-     To add a project, copy this template and paste it at the TOP of the list:
+     To add a project, copy this template and paste it into the list.
+     The site orders projects by their GitHub commit count (most first); this list
+     order is only used as a fallback, and for projects with the same count or no repo:
 
      {
        name: "Project Name",
@@ -77,25 +80,6 @@ window.SITE = {
      },
   ===================================================================== */
   projects: [
-    {
-      name: "Tab Mixer",
-      desc: {
-        tr: "Chrome, Brave ve Firefox için sekmeler arası ses mikseri eklentisi: ses çıkaran sekmeleri tek listede gösterir, her sekmenin sesini ayrı ayrı yükseltip alçaltmayı, susturmayı ve sekmeye tek tıkla geçmeyi sağlar. Tek kod tabanından Manifest V3 ile iki tarayıcı ailesi için derlenir.",
-        en: "A per-tab volume mixer extension for Chrome, Brave and Firefox: it lists the tabs playing audio and lets you boost or lower each tab's volume independently, mute it, or jump to it in one click. Built from a single codebase for both browser families with Manifest V3."
-      },
-      tech: "TypeScript · Preact · WXT · Manifest V3",
-      github: "https://github.com/berkaycinar-dev/tab-mixer"
-    },
-    {
-      name: { tr: "Portfolyo Sitesi", en: "Portfolio Site" },
-      desc: {
-        tr: "Bu kişisel portfolyo sitesi: çok sayfalı yapı, haftalık blog, Türkçe/İngilizce dil desteği, açık/karanlık tema ve telefon-tablet uyumlu tasarım. Saf HTML, CSS ve JavaScript ile yazıldı, Vercel'de yayında.",
-        en: "This personal portfolio site: multi-page structure, weekly blog, Turkish/English language support, light/dark theme and a phone and tablet friendly design. Written in plain HTML, CSS and JavaScript, live on Vercel."
-      },
-      tech: "HTML5 · CSS3 · JavaScript",
-      github: "https://github.com/berkaycinar-dev/portfolio-site",
-      demo: "https://berkaycinar.vercel.app"
-    },
     {
       name: "Anchorly",
       desc: {
@@ -118,13 +102,14 @@ window.SITE = {
       github: "https://github.com/berkaycinar-dev/anchorly-api"
     },
     {
-      name: { tr: "STDERP Tanıtım Sitesi", en: "STDERP Promotional Site" },
+      name: { tr: "Portfolyo Sitesi", en: "Portfolio Site" },
       desc: {
-        tr: "Savunma sanayii süreç takip yazılımını tanıtan, Türkçe ve İngilizce dokümantasyonlu statik site.",
-        en: "A static site promoting a defense-industry process tracking software, with Turkish and English documentation."
+        tr: "Bu kişisel portfolyo sitesi: çok sayfalı yapı, haftalık blog, Türkçe/İngilizce dil desteği, açık/karanlık tema ve telefon-tablet uyumlu tasarım. Saf HTML, CSS ve JavaScript ile yazıldı, Vercel'de yayında.",
+        en: "This personal portfolio site: multi-page structure, weekly blog, Turkish/English language support, light/dark theme and a phone and tablet friendly design. Written in plain HTML, CSS and JavaScript, live on Vercel."
       },
-      tech: "HTML5 · CSS3 · Bootstrap 5",
-      github: "https://github.com/berkaycinar-dev/STDERP"
+      tech: "HTML5 · CSS3 · JavaScript",
+      github: "https://github.com/berkaycinar-dev/portfolio-site",
+      demo: "https://berkaycinar.vercel.app"
     },
     {
       name: "Activity Tracking System",
@@ -136,6 +121,15 @@ window.SITE = {
       github: "https://github.com/berkaycinar-dev/Activity_Tracking_System"
     },
     {
+      name: { tr: "STDERP Tanıtım Sitesi", en: "STDERP Promotional Site" },
+      desc: {
+        tr: "Savunma sanayii süreç takip yazılımını tanıtan, Türkçe ve İngilizce dokümantasyonlu statik site.",
+        en: "A static site promoting a defense-industry process tracking software, with Turkish and English documentation."
+      },
+      tech: "HTML5 · CSS3 · Bootstrap 5",
+      github: "https://github.com/berkaycinar-dev/STDERP"
+    },
+    {
       name: "EDonusumDemo",
       desc: {
         tr: "e-Fatura, e-Arşiv ve e-İrsaliye belgelerini oluşturup UBL-TR benzeri XML üreten masaüstü demosu (resmi e-belge değildir).",
@@ -143,6 +137,15 @@ window.SITE = {
       },
       tech: "C# · .NET 9 · WPF · SQL Server",
       github: "https://github.com/berkaycinar-dev/EDonusumDemo"
+    },
+    {
+      name: "Tab Mixer",
+      desc: {
+        tr: "Chrome, Brave ve Firefox için sekmeler arası ses mikseri eklentisi: ses çıkaran sekmeleri tek listede gösterir, her sekmenin sesini ayrı ayrı yükseltip alçaltmayı, susturmayı ve sekmeye tek tıkla geçmeyi sağlar. Tek kod tabanından Manifest V3 ile iki tarayıcı ailesi için derlenir.",
+        en: "A per-tab volume mixer extension for Chrome, Brave and Firefox: it lists the tabs playing audio and lets you boost or lower each tab's volume independently, mute it, or jump to it in one click. Built from a single codebase for both browser families with Manifest V3."
+      },
+      tech: "TypeScript · Preact · WXT · Manifest V3",
+      github: "https://github.com/berkaycinar-dev/tab-mixer"
     }
   ],
 
