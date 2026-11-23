@@ -67,11 +67,8 @@ h1.page{font-family:var(--hf);font-weight:var(--hw,600);line-height:1.08;letter-
 .tiles a:hover{border-color:var(--accent);transform:translateY(-3px)}
 .tiles b{display:block;font-family:var(--hf);font-size:22px;margin-bottom:4px}
 .tiles span{font-size:14px;color:var(--mute)}
-.bigmail{font-family:var(--hf);font-size:clamp(26px,5.4vw,64px);line-height:1.1;display:inline-block;text-decoration:none;border-bottom:3px solid var(--accent);word-break:break-all}
-.bigmail:hover{color:var(--accent)}
 .post{padding:28px 0;border-top:1px solid var(--line)}
 .post h3{font-family:var(--hf);font-size:clamp(24px,3.4vw,36px);font-weight:var(--hw,600);line-height:1.15;margin:8px 0}
-.post h3 a{text-decoration:none}.post h3 a:hover{color:var(--accent)}
 .post p{max-width:62ch;margin-bottom:12px;opacity:.88}
 .meta{display:flex;gap:14px;flex-wrap:wrap;font:600 12px var(--uf);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
 .meta span:first-child{color:var(--accent)}
@@ -129,7 +126,6 @@ h1.page{font-size:clamp(36px,7vw,84px);font-weight:900;letter-spacing:-.035em;li
 .btn:hover{background:var(--accent);box-shadow:4px 4px 0 var(--ink)}
 .btn.ghost{background:var(--card)}
 .btn.ghost:hover{background:var(--accent);border-color:var(--ink);color:#fff}
-.bigmail{border:0;background:linear-gradient(transparent 62%,var(--yellow) 62%);font-weight:900;letter-spacing:-.03em}
 .post{border:3px solid var(--ink);padding:26px;margin-bottom:20px;background:var(--card);box-shadow:6px 6px 0 var(--ink)}
 .post h3{font-weight:900}
 .article .prose p:first-of-type::first-letter{background:var(--yellow);padding:6px 12px 0;margin-right:10px;color:var(--ink)}
@@ -160,7 +156,6 @@ html{zoom:.8}
 [data-theme=dark] .phead{background:var(--tint-y);box-shadow:8px 8px 0 var(--yellow)}
 [data-theme=dark] .phead .kicker{background:var(--yellow);color:#0d0d0d}
 [data-theme=dark] .display em,[data-theme=dark] .col h4,[data-theme=dark] .article .prose p:first-of-type::first-letter,[data-theme=dark] .badge{color:#0d0d0d}
-[data-theme=dark] .bigmail{background:linear-gradient(transparent 62%,rgba(220,218,208,.35) 62%)}
 [data-theme=dark] .langsw button:hover{color:#0d0d0d}
 [data-theme=dark] .foot{background:var(--card);color:var(--ink);border-top:3px solid var(--ink)}
 [data-theme=dark] .logo i{background:var(--accent)}
@@ -273,7 +268,6 @@ body{overflow-wrap:break-word}
   .tiles a:hover{transform:none;box-shadow:3px 3px 0 var(--ink)}
 
   /* contact */
-  .bigmail{font-size:clamp(20px,6.4vw,28px);word-break:break-word}
   .facts.wide{padding:0;box-shadow:none}
 
   /* blog */
