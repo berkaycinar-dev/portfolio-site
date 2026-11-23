@@ -24,7 +24,7 @@
     "Kısaca ben, eğitim ve diller": "A short intro, education and languages",
     "Staj ve çalışma deneyimlerim": "Internships and work experience",
     "Teknolojiler ve sertifikalar": "Technologies and certificates",
-    "E-posta, GitHub ve CV": "Email, GitHub and CV",
+    "E-posta, sosyal medya ve CV": "Email, social media and CV",
 
     /* projects */
     "02 — Projeler": "02 — Projects",
