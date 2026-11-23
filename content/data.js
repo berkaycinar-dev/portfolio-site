@@ -78,6 +78,15 @@ window.SITE = {
   ===================================================================== */
   projects: [
     {
+      name: "Tab Mixer",
+      desc: {
+        tr: "Chrome, Brave ve Firefox için sekmeler arası ses mikseri eklentisi: ses çıkaran sekmeleri tek listede gösterir, her sekmenin sesini ayrı ayrı yükseltip alçaltmayı, susturmayı ve sekmeye tek tıkla geçmeyi sağlar. Tek kod tabanından Manifest V3 ile iki tarayıcı ailesi için derlenir.",
+        en: "A per-tab volume mixer extension for Chrome, Brave and Firefox: it lists the tabs playing audio and lets you boost or lower each tab's volume independently, mute it, or jump to it in one click. Built from a single codebase for both browser families with Manifest V3."
+      },
+      tech: "TypeScript · Preact · WXT · Manifest V3",
+      github: "https://github.com/berkaycinar-dev/tab-mixer"
+    },
+    {
       name: { tr: "Portfolyo Sitesi", en: "Portfolio Site" },
       desc: {
         tr: "Bu kişisel portfolyo sitesi: çok sayfalı yapı, haftalık blog, Türkçe/İngilizce dil desteği, açık/karanlık tema ve telefon-tablet uyumlu tasarım. Saf HTML, CSS ve JavaScript ile yazıldı, Vercel'de yayında.",
