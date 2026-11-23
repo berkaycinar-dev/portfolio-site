@@ -55,7 +55,7 @@
 
     /* contact */
     "06 — İletişim": "06 — Contact", "Birlikte çalışalım.": "Let's work together.",
-    "Konum": "Location", "Özgeçmiş": "Résumé", "CV'yi indir (PDF)": "Download CV (PDF)"
+    "E-posta": "Email", "Sosyal medya": "Social media"
   };
 
   var TITLES = {
