@@ -26,11 +26,11 @@
 
   var card = function (p) {
     var x = L(p);
-    return '<article class="post">' +
+    return '<a class="post" href="' + link(p) + '">' +
       '<div class="meta">' + (p.issue ? '<span>' + T().week + p.issue + '</span>' : '') + '<span>' + fmt(p.date) + '</span><span>' + x.tag + '</span></div>' +
-      '<h3><a href="' + link(p) + '">' + x.title + '</a></h3>' +
+      '<h3>' + x.title + '</h3>' +
       '<p>' + x.summary + '</p>' +
-      '<a class="more" href="' + link(p) + '">' + T().read + '</a></article>';
+      '<span class="more">' + T().read + '</span></a>';
   };
   var empty = function () { return '<p class="empty">' + T().empty + '</p>'; };
 

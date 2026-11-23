@@ -322,3 +322,19 @@ button.btn{cursor:pointer;font-family:var(--uf)}
 .btn.big small{font:500 13px var(--uf);letter-spacing:0;text-transform:none;opacity:.6;word-break:break-all}
 .btn.big:hover small{opacity:.85}
 @media(max-width:640px){.btn.big{min-width:0;padding:18px 20px}}
+a.post{display:block;color:inherit;text-decoration:none;transition:opacity .7s ease,transform .25s,box-shadow .25s,background-color .25s,color .25s,border-color .25s}
+a.post:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--accent)}
+a.post:hover .more{color:var(--accent)}
+.post .more{display:inline-block}
+@media(prefers-reduced-motion:reduce){a.post:hover{transform:none}}
+/* subtle hover lift for general cards */
+.exp,.col,.cert li,.pn a{transition:opacity .7s ease,transform .2s,box-shadow .2s,background-color .25s,color .25s,border-color .25s}
+@media(hover:hover){
+  .exp:hover,.col:hover,.pn a:hover{transform:translate(-2px,-2px)}
+  .exp:nth-of-type(odd):hover{box-shadow:8px 8px 0 var(--blue)}
+  .exp:nth-of-type(even):hover{box-shadow:8px 8px 0 var(--accent)}
+  .col:hover{box-shadow:4px 4px 0 var(--ink)}
+  .pn a:hover{box-shadow:4px 4px 0 var(--accent)}
+  .cert li:hover{transform:translateX(4px);border-color:var(--accent)}
+}
+@media(prefers-reduced-motion:reduce){.exp:hover,.col:hover,.pn a:hover,.cert li:hover{transform:none}}
