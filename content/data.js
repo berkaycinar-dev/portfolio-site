@@ -109,7 +109,7 @@ window.SITE = {
       },
       tech: "HTML5 · CSS3 · JavaScript",
       github: "https://github.com/berkaycinar-dev/portfolio-site",
-      demo: "https://berkaycinar.vercel.app"
+      demo: "https://www.berkaycinar.dev"
     },
     {
       name: "Activity Tracking System",
